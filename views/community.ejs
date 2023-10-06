@@ -1,0 +1,33 @@
+<%- include('partials/header3.ejs'); -%>
+<section id="feedback">
+    <div class="containerf">
+        <h2>Feedback Form</h2>
+        <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <hr>
+        <br>
+        <h4>Email: omdena@vitbhopal.ac.in </h4>
+        <h4><a href="https://omdena.com/">Official Website</a></h4>
+        <h4><a href="https://github.com/OmdenaAI">GitHub</a></h4>
+        <h4><a href="https://www.linkedin.com/company/omdena-bhopal-chapter/">LinkedIn</a></h4>
+    </div>
+</section>
+
+
+<%- include('partials/footer.ejs'); -%>
