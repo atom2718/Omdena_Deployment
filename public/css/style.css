@@ -59,7 +59,19 @@ body{
     height:450px;
     width: 650px;
     border-radius: 10px;
+    animation-name : overview-img;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+@keyframes overview-img {
+    0%   {transform: translateX(15px);}
+    50%  {transform: translateX(-15px);}
+    100% {transform: translateX(15px);}
+    
+    
+}
+
 .about{
     display: flex;
     gap:20px;
@@ -196,12 +208,17 @@ body{
 .about-img{
     height:200px;
     width:560px;
+    animation-name : overview-img;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+
 .about-left{
     margin-top: auto;
     margin-bottom: auto;
 }
-
 .background,.problem,.goals,.tech{
     display:flex;
     gap:40px;
@@ -212,6 +229,10 @@ body{
     margin:30px;
     border-radius: 20px;
 }
+.background:hover,.problem:hover,.tech:hover,.goals:hover{
+    transform: scale(1.05, 1.05);
+}
+
 .hr-1{
     color: azure;
 }
