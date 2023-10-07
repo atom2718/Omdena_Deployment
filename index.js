@@ -34,6 +34,7 @@ app.get("/contributors",function(req,res){//required
 app.get("/contact",function(req,res){//not required
     res.render("community.ejs");
 });
+
 app.listen(5000,function(){
     console.log("Server started");
 })
